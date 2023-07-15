@@ -1,14 +1,18 @@
-const form = document.getElementById("form");
 
-form.elements.pass.addEventListener(""blur"", onBlur);
 
-function onBlur(e) {
-  const length = e.target.value.length;
-  if (length >= 8 && length <= 15) {
-    form.classList.add(""correct"");
-    form.classList.remove(""wrong"");
+const inputRef = document.getElementById("validator-input");
+
+inputRef.addEventListener("blur", onBlurBorderColor);
+
+
+function onBlurBorderColor(event) {
+  const inputDataLength = Number(inputRef.dataset.length);
+  const inputValueLength = Number(inputRef.value.trim().length);
+  if (inputValueLength === inputDataLength) {
+   inputRef.classList.add("valid");
+    inputRef.classList.remove("invalid");
   } else {
-    form.classList.add(""wrong"");
-    form.classList.remove(""correct"");
+    inputRef.classList.remove("invalid");
+    inputRef.classList.add("valid");
   }
-}"
+}

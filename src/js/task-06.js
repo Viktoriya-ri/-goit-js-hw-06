@@ -1,6 +1,6 @@
 
 
-const inputRef = document.getElementById("validator-input");
+const inputRef = document.getElementById("validation-input");
 
 inputRef.addEventListener("blur", onBlurBorderColor);
 

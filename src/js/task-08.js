@@ -7,7 +7,7 @@ const profile = {};
 function handleFormSubmit(event) {
     event.preventDefault();
 const email = event.currentTarget.elements.email;
-    const password = event.currentTarget.element.password;
+    const password = event.currentTarget.elements.password;
     if (email.value === '' || password.value === '') {
         alert('Please fill in all the fields!');
     } else {

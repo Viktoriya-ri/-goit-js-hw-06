@@ -13,4 +13,5 @@ const onClickIncrementBtn = (event) => {
     valueRef.textContent = counterValue;
 };
 
-
+decrementBtn.addEventListener('click', onClickDecrementBtn);
+incrementBtn.addEventListener('click', onClickIncrementBtn);

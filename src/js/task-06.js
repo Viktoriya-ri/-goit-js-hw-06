@@ -12,7 +12,7 @@ function onBlurBorderColor() {
    inputRef.classList.add("valid");
     inputRef.classList.remove("invalid");
   } else {
-    inputRef.classList.remove("invalid");
-    inputRef.classList.add("valid");
+    inputRef.classList.remove("valid");
+    inputRef.classList.add("invalid");
   }
 }
